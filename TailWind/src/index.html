@@ -3,21 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
     <link href="./output.css" rel="stylesheet">
-    <title>TailWind</title>
+    <title>Frontend Mentor | Results summary component</title>
+    <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
 </head>
-<body class="bg-cyan-300">
-    <h1 class="text-3xl font-bold underline text-primario">Aprendiendo TailWind</h1>
-    <h2>Soy un experto</h2>
+<body class="bg-white flex justify-center items-center " style="font-family: 'Hanken Grotesk', sans-serif;">
+    <div class="flex bg-Light-royal-blue w-96 h-96 ml-10 mt-60 rounded-lg p-6 mr-6">
+        <div>
+            <h1 class="text-white text-2xl">Your Result</h1>
+            <div class="">
+                <p class="text-white text-2xl">76</p>
+                <p>of 100</p>
+            </div>
+            <h1>Great</h1>
+            <p>You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+    </div>
 
-    <form action="" class="bg-white w-80 mx-auto mt-8 rounded-lg p-6">
-        <input type="text" class="border-gray-300 w-full px-3 py-2 mb-4 rounded-md disabled:bg-red-200" placeholder="Nombre">
-        <input type="email" class="border-gray-300 w-full px-3 py-2 mb-4 rounded-md focus:ring-1 focus:ring-green-500
-        invalid:ring-red-400" placeholder="Correo">
-        <p class="text-red-400 hidden peer-invalid:block">El correo es incorrecto</p>
+    <div class="flex bg-White w-80 h-80 ml-10 mt-60 rounded-lg p-6">
+        <h1>Summary</h1>
+        <div>
+            <p>Reaction</p><p>80 / 100</p>
+        </div>
+        <div>
+            <p>Memory</p><p>92 / 100</p>
+        </div>
+        <div>
+            <p>Verbal</p><p>61 / 100</p>
+        </div>
+        <div>
+            <p>Visual</p><p>72 / 100</p>
+        </div>
+        <button>Continue</button>
+    </div>
 
-        <input type="password" class="border-gray-300 w-full px-3 mb-4 py-2 rounded-md" placeholder="Contraseña">
-        <input type="submit" class=" bg-blue-500 border-gray-300 w-full px-3 py-2 mb-4 rounded-md cursor-pointer hover:bg-blue-400" placeholder="Enviar">
-    </form>
 </body>
 </html>

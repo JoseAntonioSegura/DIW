@@ -1,45 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
-    <link href="./output.css" rel="stylesheet">
-    <title>Frontend Mentor | Results summary component</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Ejercicios 4</title>
+  <link rel="stylesheet" href="output.css">
 </head>
-<body class="bg-white " style="font-family: 'Hanken Grotesk', sans-serif;">
+<body class="place-content-center h-screen sm:grid font-Hanken-Grotesk">
 
-<div class="flex flex-col md:flex-row justify-center items-center h-screen mr-0">
-    <div class="bg-gradient-to-b from-Light-slate-blue to-Light-royal-blue justify-center items-center w-[340px] h-[450px] rounded-3xl p-6 mb-0 mr-0">
-        <h1 class="text-white text-2xl text-center mt-3 font-semibold" >Your Result</h1>
-        <div class="flex flex-col items-center m-auto mt-8 justify-center rounded-full w-[180px] h-[180px] bg-gradient-to-b from-Violet-blue to-Persian-blue">
-            <p class="text-white text-6xl font-bold text-center">76</p>
-            <p class="text-Light-lavender text-center">of 100</p>
-        </div>        
-        <div>
-            <h1 class="text-center text-white text-3xl m-3 font-bold">Great</h1>
-            <p class="text-center text-Light-lavender pl-9 pr-9">You scored higher than 65% of the people who have taken these tests.</p>
+    <div class="max-w-2xl sm:shadow-2xl sm:mx-4 sm:grid sm:grid-cols-2 sm:rounded-3xl">
+      <div class="bg-gradient-to-b from-Light-slate-blue to-Light-royal-blue result py-6 px-14 grid items-center content-start justify-center text-center gap-4 rounded-b-3xl sm:rounded-3xl">
+        <h1 class="text-xl text-Light-lavender font-semibold mt-1">Your Result</h1>
+
+        <div class="bg-gradient-to-b from-Violet-blue to-Persian-blue w-[160px] h-[160px] mt-5 rounded-full grid place-content-center m-auto  ">
+          <h1 class="text-white font-bold text-6xl">76</h1><p class="text-Light-lavender mt-1">of 100</p>
         </div>
+        <h1 class="text-white text-2xl font-bold">Great</h1><p class="text-Light-lavender mb-8">You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+
+      <div class="p-8 grid content-start gap-5">
+        <h1 class="text-xl text-Dark-gray-blue font-bold">Summary</h1>
+
+          <div>
+            <div class="rounded-lg p-2 bg-light-red/10 flex justify-between">
+              <div class="flex items-center">
+                <img src="./assets/images/icon-reaction.svg"/>
+                <p class="text-light-red pl-2 font-semibold">Reaction</p>
+              </div>
+              <p class="text-Dark-gray-blue font-bold">80 <a class="text-gray-400">/ 100</a></p>
+            </div>
+          </div>
+
+          <div>
+            <div class="rounded-lg p-2 bg-orangey-yellow/10 flex justify-between">
+              <div class="flex items-center">
+                <img src="./assets/images/icon-memory.svg"/>
+                <p class="text-orangey-yellow pl-2 font-semibold">Memory</p>
+              </div>
+              <p class="text-Dark-gray-blue font-bold">92 <a class="text-gray-400">/ 100</a></p>
+            </div>
+          </div>
+
+          <div >
+            <div class="rounded-lg p-2 bg-green-teal/10 flex justify-between">
+              <div class="flex items-center">
+                <img src="./assets/images/icon-verbal.svg"/>
+                <p class="text-green-teal pl-2 font-semibold">Verbal</p>
+              </div>
+              <p class="text-Dark-gray-blue font-bold">61 <a class="text-gray-400">/ 100</a></p>
+            </div>
+          </div>
+
+          <div class="mb-2">
+            <div class="rounded-lg p-2 bg-cobalt-blue/10 flex justify-between">
+              <div class="flex items-center">
+                <img src="./assets/images/icon-visual.svg"/>
+                <p class="text-cobalt-blue pl-2 font-semibold">Visual</p>
+              </div>
+              <p class="text-Dark-gray-blue font-bold">72 <a class="text-gray-400">/ 100</a></p>
+            </div>
+          </div>
+        <button class="bg-Dark-gray-blue p-3 mx-2 rounded-full text-White font-bold hover:bg-Light-royal-blue">Continue</button>
+      </div>
     </div>
-
-    <div class="bg-gray-100 w-[340px] h-[450px] rounded-r-lg p-6 ml-0">
-        <h1 class="text-center">Summary</h1>
-        <div>
-            <p>Reaction</p><p>80 / 100</p>
-        </div>
-        <div>
-            <p>Memory</p><p>92 / 100</p>
-        </div>
-        <div>
-            <p>Verbal</p><p>61 / 100</p>
-        </div>
-        <div>
-            <p>Visual</p><p>72 / 100</p>
-        </div>
-        <button class="mt-5">Continue</button>
-    </div>
-</div>
-
 </body>
 </html>
